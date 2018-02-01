@@ -1,0 +1,8 @@
+{
+    "name": "TinyLineNav",
+    "version": "0.0.1",
+    "private": true,
+    "main": "./index.js",
+    "discription": "模仿微信的页面跳转小组件"
+  }
+  

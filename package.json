@@ -1,0 +1,38 @@
+{
+  "name": "myNative",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "antd-mobile": "^2.1.4",
+    "axios": "^0.17.1",
+    "lodash": "^4.17.4",
+    "react": "16.2.0",
+    "react-native": "0.52.1",
+    "react-native-vector-icons": "^4.5.0",
+    "react-navigation": "^1.0.0-beta.27",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-saga": "^0.16.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "22.1.0",
+    "babel-plugin-import": "^1.6.3",
+    "babel-plugin-module-resolver": "^3.0.0",
+    "babel-preset-react-native": "4.0.0",
+    "babel-preset-react-native-stage-0": "^1.0.1",
+    "jest": "22.1.4",
+    "react-test-renderer": "16.2.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huangketong/react-navive-app.git"
+  }
+}

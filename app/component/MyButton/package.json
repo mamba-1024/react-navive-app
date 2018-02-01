@@ -1,0 +1,8 @@
+{
+    "name": "MyButton",
+    "version": "0.0.1",
+    "private": true,
+    "main": "./index.js",
+    "discription": "为了区分react-native自带的Button组件，故命名为MyButton"
+  }
+  
