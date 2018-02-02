@@ -65,6 +65,11 @@ class MyScreen extends Component {
         this.props.navigation.navigate('Login');
     }
 
+    
+    source = ()=>{
+        return <Image source={require('../../assets/basic_info_icon.png')}></Image>
+    }
+
     render() {
         const {
             targetText,
@@ -81,14 +86,17 @@ class MyScreen extends Component {
                         <TinyLineNav
                             onPress={() => navigation.navigate('Wallet')}
                             title='钱包'
+                            source={this.source}
                         />
                         <TinyLineNav
                             onPress={() => navigation.navigate('Set')}
                             title='设置'
+                            source={this.source}
                         />
                         <TinyLineNav
                             onPress={() => navigation.navigate('Detail')}
                             title='详情'
+                            source={this.source}
                         />
                     </View>
 

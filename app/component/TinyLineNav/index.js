@@ -11,21 +11,23 @@ import {
 /**
  * @param title string
  * @param onPress function
+ * @param source function
  * @return React.Node
  * **/
 
 const TinyLineNav = ({
     onPress,
-    title
+    title,
+    source
 }) => {
     const _onPressButton = () => {
         console.log('_onPressButton');
     }
-
+    
     return (
         <TouchableHighlight onPress={onPress} style={styles.container} underlayColor='#E5E5E5'>
             <View style={styles.content}>
-                <Image source={require('../../assets/basic_info_icon.png')}></Image>
+                {source ? source() : mull}
                 <Text style={styles.myText}>{title}</Text>
                 <Image source={require('../../assets/arrow.png')}></Image>
             </View>
@@ -53,7 +55,7 @@ const styles = StyleSheet.create({
         paddingRight: 12,
         borderBottomWidth: 1,
         borderColor: '#E5E5E5',
-        
+
         flex: 1,
         flexDirection: 'row',
         alignItems: 'center',
